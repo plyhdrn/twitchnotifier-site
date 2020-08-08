@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function reloadNew() {
     console.log('test');
-    window.location.replace("http://127.0.0.1:5500")
+    window.location.replace("https://plyhdrn.github.io/twitchnotifier-site/")
 }
 
 async function showLast() {
@@ -173,7 +173,7 @@ function setViewPort(state) {
 }
 
 function authTwitch() {
-    window.location.replace("https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3b7spcxyyjayb9i9ul26du4rwtsquj&redirect_uri=http://127.0.0.1:5500&scope=user_read+chat:read")
+    window.location.replace("https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3b7spcxyyjayb9i9ul26du4rwtsquj&redirect_uri=https://plyhdrn.github.io/twitchnotifier-site/&scope=user_read+chat:read")
 }
 
 
