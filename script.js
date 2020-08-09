@@ -189,6 +189,7 @@ function notifyMe() {
         // If it's okay let's create a notification
         var notification = new Notification("This is a test notification!");
         currentState += 2;
+        animate();
     }
 
     // Otherwise, we need to ask the user for permission
@@ -198,12 +199,13 @@ function notifyMe() {
             if (permission === "granted") {
                 var notification = new Notification("This is a test notification!");
                 currentState += 2;
+                animate();            
             }
         });
     } else {
         currentState++;
+        animate();
     }
-    animate();
 
     // At last, if the user has denied notifications, and you 
     // want to be respectful there is no need to bother them any more.
